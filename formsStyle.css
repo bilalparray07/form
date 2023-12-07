@@ -1,0 +1,242 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.menu-item {
+  height: 60px;
+  width: 60px;
+  border: solid 3px gray;
+  border-radius: 100px;
+  border: solid gray 5px;
+  font-size: 12px;
+  margin: 0 50px 0 10px;
+  background: #f7f7f7;
+  pointer-events: none;
+}
+
+.menu-item button {
+  background: none;
+  border: none;
+  margin-top: 10px;
+  pointer-events: none;
+}
+
+.menu-item.active {
+  background: #006ebc;
+}
+
+.menu-item.active button {
+  color: #ffffff;
+}
+
+.content {
+  text-align: center;
+  box-shadow: 5px 5px 5px 5px gray;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 2%;
+  font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+}
+
+.form {
+  display: none;
+  padding: 5px;
+}
+
+.error {
+  color: red;
+}
+span {
+  float: left;
+  margin-left: 20%;
+}
+
+span.required {
+  color: red;
+  font-size: 40px;
+  position: absolute;
+  margin-top: -6px;
+  margin-left: -27px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.headingForFirstForm {
+  font-size: 32px;
+  font-weight: 300;
+  color: #006ebc;
+  margin-right: 45%;
+  margin-top: 21px;
+  margin-bottom: 10.5px;
+}
+
+.formFirstSubHeading {
+  font-size: 32px;
+  font-weight: 300;
+  color: #006ebc;
+  margin-right: 55%;
+  margin-top: 21px;
+  margin-bottom: 10.5px;
+}
+
+#formFirst input[type="text"],
+textarea,
+select,
+input[type="file"] {
+  width: 60%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#submitFirstFormButton {
+  color: #ffffff;
+  background: #038886;
+  border: none;
+  height: 30px;
+  width: 80px;
+  letter-spacing: 2px;
+  margin-left: 50%;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+#formFirst input[type="file"] {
+  border-radius: 0;
+  border: none;
+}
+
+#formFirst hr.line {
+  border: 0;
+  height: 6px;
+  background-color: gray;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  display: block;
+  width: 60%;
+}
+
+.headingForSecondForm {
+  font-size: 32px;
+  font-weight: 300;
+  color: #006ebc;
+  margin-right: 30%;
+  margin-top: 21px;
+  margin-bottom: 10.5px;
+}
+
+.formSecondSubHeading {
+  font-size: 32px;
+  font-weight: 300;
+  color: #7c8992;
+  margin-right: 40%;
+  margin-top: 21px;
+  margin-bottom: 10.5px;
+}
+
+#formSecond input[type="text"] {
+  width: 60%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+p {
+  text-align: start;
+  width: 60%;
+  margin-left: 20%;
+}
+
+#submitSecondFormButton {
+  color: #ffffff;
+  background: #038886;
+  border: none;
+  height: 30px;
+  width: 80px;
+  letter-spacing: 2px;
+  margin-right: 20%;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+#backToFirstForm {
+  color: #ffffff;
+  background: #6a8988;
+  border: none;
+  height: 30px;
+  width: 70px;
+  letter-spacing: 2px;
+  margin-left: 20%;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.headingForThirdForm {
+  font-size: 32px;
+  font-weight: 300;
+  color: #006ebc;
+  margin-right: 35%;
+  margin-top: 21px;
+  margin-bottom: 2px;
+}
+
+.formThirdSubHeading {
+  font-size: 32px;
+  font-weight: 300;
+  color: #616a70;
+  margin-right: 50%;
+  margin-top: 5px;
+  margin-bottom: 10.5px;
+}
+
+#formThird input[type="text"] {
+  width: 80%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#submitThirdFormButton {
+  color: #ffffff;
+  background: #d8041d;
+  border: none;
+  height: 30px;
+  width: 70px;
+  letter-spacing: 2px;
+  margin-right: 10%;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+#backToSecondForm {
+  color: #ffffff;
+  background: #6a8988;
+  border: none;
+  height: 30px;
+  width: 70px;
+  letter-spacing: 2px;
+  margin-right: 60%;
+  border-radius: 2px;
+  font-weight: 500;
+  margin-left: 10%;
+}
+
+#formThird hr.line {
+  border: 0;
+  height: 6px;
+  background-color: gray;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  display: block;
+  width: 80%;
+}
