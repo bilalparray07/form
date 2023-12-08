@@ -24,8 +24,14 @@ $(document).ready(function () {
     if (form[0].checkValidity()) {
       menuItems.eq(1).click();
     } else {
+      $("input, select, textarea").each(function (index) {
+        var input = $(this);
+        input.css("background-color", "yellow");
+      });
+      $("#label-name").html("Name is Required");
+      $("#label-selectOne").html("Please Select an Option");
+      $("#label-description").html("Please give  description");
       $("#errorField1").html("Please fill out all required fields.");
-      alert("Flease Fill All The Required Fields");
     }
   });
 

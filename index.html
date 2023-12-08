@@ -1,181 +1,312 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Forms</title>
-    <link rel="stylesheet" type="text/css" href="formsStyle.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="formsStyle.css" />
+  </head>
 
-<body>
-
-
+  <body>
     <div class="menu">
-        <div class="menu-item" id="item1">
-            <button disabled>
-                Step One
-            </button>
-        </div>
-        <div class="menu-item" id="item2">
-            <button disabled>
-                Step Two
-            </button>
-        </div>
-        <div class="menu-item" id="item3">
-            <button disabled>
-                Step Three
-            </button>
-        </div>
+      <div class="menu-item" id="item1">
+        <button disabled>Step One</button>
+      </div>
+      <div class="menu-item" id="item2">
+        <button disabled>Step Two</button>
+      </div>
+      <div class="menu-item" id="item3">
+        <button disabled>Step Three</button>
+      </div>
     </div>
     <div class="content">
+      <!-- Form First Start-->
+      <div id="formFirst" class="form">
+        <h2 class="headingForFirstForm">RESOURCE</h2>
+        <form id="firstForm">
+          <span class="required">*</span>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+          /><br />
+          <label for="name" id="label-name" class="error"></label><br /><br />
+          <span class="required">*</span>
+          <select id="selectOne" name="type" required>
+            <option value="">Select Type</option>
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+          </select>
+          <br />
+          <label for="selectOne" id="label-selectOne" class="error"></label
+          ><br /><br />
+          <span class="required">*</span>
+          <textarea
+            id="textAreaOne"
+            name="description"
+            placeholder="Description"
+            required
+          ></textarea
+          ><br />
+          <label for="description" id="label-description" class="error"></label
+          ><br />
+          <span class="required">*</span>
+          <input id="fileOne" type="file" name="file" required /><br /><br />
+          <hr class="line" />
+          <h2 class="formFirstSubHeading">TYPE</h2>
+          <span
+            >Alison, I think this is what you are looking for but we will need
+            to discuss.</span
+          ><br /><br />
+          <span><input type="checkbox" name="checkbox1" /><b>Checklist</b></span
+          ><br /><br />
+          <span
+            ><input type="checkbox" name="checkbox2" /><b
+              >Drill, Tabletop, or Other Exercise</b
+            ></span
+          >
+          <br /><br />
+          <div id="extraFieldOne" style="display: none">
+            <span class="required">*</span>
+            <textarea
+              id="extraTextareaOne"
+              name="extraTextarea"
+              placeholder="Extra Textarea"
+              required
+            ></textarea
+            ><br /><br />
+            <input id="fileTwo" type="file" name="extraFile" required />
+          </div>
+          <div id="extraFieldTwo" style="display: none">
+            <span class="required">*</span>
+            <textarea
+              id="extraTextareaTwo"
+              name="extraTextarea"
+              placeholder="Extra Textarea"
+              required
+            ></textarea
+            ><br /><br />
+            <input id="fileThree" type="file" name="extraFile" required />
+          </div>
+          <div id="errorField1" class="error"></div>
+          <button id="submitFirstFormButton" type="button">Continue</button>
+        </form>
+      </div>
+      <!-- Form First End  -->
 
-        <!-- Form First Start-->
-        <div id="formFirst" class="form">
-            <h2 class="headingForFirstForm">RESOURCE</h2>
-            <form id="firstForm">
-                <span class="required">*</span>
-                <input id="name" type="text" name="name" placeholder="Your Name" required><br><br>
-                <span class="required">*</span>
-                <select id="selectOne" name="type" required>
-                    <option value="">Select Type</option>
-                    <option value="Option 1">Option 1</option>
-                    <option value="Option 2">Option 2</option>
-                    <option value="Option 3">Option 3</option>
-                </select><br><br>
-                <span class="required">*</span>
-                <textarea id="textAreaOne" name="description" placeholder="Description" required></textarea><br>
-                <span class="required">*</span>
-                <input id="fileOne" type="file" name="file" required><br><br>
-                <hr class="line">
-                <h2 class="formFirstSubHeading">TYPE</h2>
-                <span>Alison, I think this is what you are looking for but we will need to discuss.</span><br><br>
-                <span><input type="checkbox" name="checkbox1"><b>Checklist</b></span><br><br>
-                <span><input type="checkbox" name="checkbox2"><b>Drill, Tabletop, or Other Exercise</b></span> <br><br>
-                <div id="extraFieldOne" style="display: none;">
-                    <span class="required">*</span>
-                    <textarea id="extraTextareaOne" name="extraTextarea" placeholder="Extra Textarea"
-                        required></textarea><br><br>
-                    <input id="fileTwo" type="file" name="extraFile" required>
-                </div>
-                <div id="extraFieldTwo" style="display: none;">
-                    <span class="required">*</span>
-                    <textarea id="extraTextareaTwo" name="extraTextarea" placeholder="Extra Textarea"
-                        required></textarea><br><br>
-                    <input id="fileThree" type="file" name="extraFile" required>
-                </div>
-                <div id="errorField1" class="error"></div>
-                <button id="submitFirstFormButton" type="button">Continue</button>
-            </form>
-        </div>
-        <!-- Form First End  -->
+      <!-- Form Second Start -->
+      <div id="formSecond" class="form">
+        <h2 class="headingForSecondForm">AUTHORING AGENCY</h2>
+        <form id="secondForm">
+          <span class="required">*</span>
+          <input
+            id="stepTwoInputFirst"
+            type="text"
+            name="Organization"
+            placeholder="Organization"
+            required
+          /><br /><br />
+          <span class="required">*</span>
+          <input
+            id="stepTwoInputSecond"
+            type="text"
+            name="websiteURL"
+            placeholder="Organization Website URL"
+            required
+          /><br /><br />
+          <h3 class="formSecondSubHeading">Grantee Status</h3>
+          <p>
+            Is your agency a current or former Grants to States for School
+            Emergency Management (GSEM), Readiness and Emergency Management for
+            Schools (REMS), or Emergency Management for Higher Education (EMHE)
+            grantee?
+          </p>
+          <span>My agency is a current GSEM grantee.</span><br />
+          <span
+            ><input type="radio" name="radioYesOne" /><b>Yes</b
+            ><input type="radio" name="radioNoOne" /><b>No</b></span
+          ><br /><br />
+          <div id="extraInputOne" style="display: none">
+            <input
+              id="inputOne"
+              type="text"
+              name="inputOne"
+              placeholder="Grantee Number"
+            /><br /><br />
+            <input
+              id="inputTwo"
+              type="text"
+              name="inputTwo"
+              placeholder="Grantee Award Year"
+            /><br /><br />
+          </div>
+          <span>My agency is a former GSEM grantee.</span><br />
+          <span
+            ><input type="radio" name="radioYesTwo" /><b>Yes</b
+            ><input type="radio" name="radioNoTwo" /><b>No</b></span
+          >
+          <br /><br />
+          <div id="extraInputTwo" style="display: none">
+            <input
+              id="inputThree"
+              type="text"
+              name="inputThree"
+              placeholder="Grantee Number"
+            /><br /><br />
+            <input
+              id="inputFour"
+              type="text"
+              name="inputFour"
+              placeholder="Grantee Award Year"
+            /><br /><br />
+          </div>
 
+          <span>My agency is a former REMS grantee.</span><br />
+          <span
+            ><input type="radio" name="radioYesThree" /><b>Yes</b
+            ><input type="radio" name="radioNoThree" /><b>No</b></span
+          ><br /><br />
+          <div id="extraInputThree" style="display: none">
+            <input
+              id="inputFive"
+              type="text"
+              name="inputFive"
+              placeholder="Grantee Number"
+            /><br /><br />
+            <input
+              id="inputSix"
+              type="text"
+              name="inputSix"
+              placeholder="Grantee Award Year"
+            /><br /><br />
+          </div>
+          <span>My agency is a former EMHE grantee.</span><br />
+          <span
+            ><input type="radio" name="radioYesFour" /><b>Yes</b
+            ><input type="radio" name="radioNoFour" /><b>No</b></span
+          >
+          <br /><br />
+          <div id="extraInputFour" style="display: none">
+            <input
+              id="inputSeven"
+              type="text"
+              name="inputSeven"
+              placeholder="Grantee Number"
+            /><br /><br />
+            <input
+              id="inputEight"
+              type="text"
+              name="inputEight"
+              placeholder="Grantee Award Year"
+            /><br /><br />
+          </div>
+          <span
+            ><input type="checkbox" name="checkboxFormSecond" />&nbsp; No, my
+            agency is not a current or former GSEM, REMS, or EMHE grantee.</span
+          ><br /><br />
+          <div id="errorField2" class="error"></div>
+          <div class="button-container">
+            <button id="backToFirstForm" type="button">Back</button>
+            <button id="submitSecondFormButton" type="button">Continue</button>
+          </div>
+        </form>
+      </div>
+      <!-- Form Second End -->
 
-        <!-- Form Second Start -->
-        <div id="formSecond" class="form">
+      <!-- Form Third Start -->
+      <div id="formThird" class="form">
+        <h2 class="headingForThirdForm">Submission and Authorization</h2>
+        <h3 class="formThirdSubHeading">Terms of Submission</h3>
+        <form id="thirdForm">
+          <span
+            style="
+              text-align: start;
+              margin-left: -12%;
+              margin-bottom: 10px;
+              margin-right: 10%;
+            "
+          >
+            <span
+              ><span class="required">*</span
+              ><input type="checkbox" name="checkboxFormSecond" />&nbsp; I agree
+              to the Terms of Submission by providing this information, you
+              agree that you are authorized to release this resource to the REMS
+              TA Center for general inclusion on the Tool Box, if selected</span
+            ><br /><br />
 
-            <h2 class="headingForSecondForm">AUTHORING AGENCY</h2>
-            <form id="secondForm">
-                <span class="required">*</span>
-                <input id="stepTwoInputFirst" type="text" name="Organization" placeholder="Organization" required><br><br>
-                <span class="required">*</span>
-                <input id="stepTwoInputSecond" type="text" name="websiteURL" placeholder="Organization Website URL"
-                    required><br><br>
-                <h3 class="formSecondSubHeading">Grantee Status</h3>
-                <p>Is your agency a current or former Grants to States for School Emergency Management (GSEM), Readiness
-                    and Emergency Management for Schools (REMS), or Emergency Management for Higher Education (EMHE)
-                    grantee?</p>
-                <span>My agency is a current GSEM grantee.</span><br>
-                <span><input type="radio" name="radioYesOne"><b>Yes</b><input type="radio"
-                        name="radioNoOne"><b>No</b></span><br><br>
-                <div id="extraInputOne" style="display: none;">
-                    <input id="inputOne" type="text" name="inputOne" placeholder="Grantee Number"><br><br>
-                    <input id="inputTwo" type="text" name="inputTwo" placeholder="Grantee Award Year"><br><br>
-                </div>
-                <span>My agency is a former GSEM grantee.</span><br>
-                <span><input type="radio" name="radioYesTwo"><b>Yes</b><input type="radio"
-                        name="radioNoTwo"><b>No</b></span> <br><br>
-                <div id="extraInputTwo" style="display: none;">
-                    <input id="inputThree" type="text" name="inputThree" placeholder="Grantee Number"><br><br>
-                    <input id="inputFour" type="text" name="inputFour" placeholder="Grantee Award Year"><br><br>
-                </div>
+            <span>
+              <span class="required">*</span
+              ><input type="checkbox" name="checkboxFormSecond" />&nbsp; I have
+              permission and proper copyright clearance to allow the REMS TA
+              Center to post this document as a part of the Tool Box</span
+            ><br /><br />
+          </span>
+          <hr class="line" />
 
+          <span class="required">*</span>
+          <input
+            id="stepThreeInputOne"
+            type="text"
+            name="firstName"
+            placeholder="FIRST NAME"
+            required
+          /><br /><br />
 
-                <span>My agency is a former REMS grantee.</span><br>
-                <span><input type="radio" name="radioYesThree"><b>Yes</b><input type="radio"
-                        name="radioNoThree"><b>No</b></span><br><br>
-                <div id="extraInputThree" style="display: none;">
-                    <input id="inputFive" type="text" name="inputFive" placeholder="Grantee Number"><br><br>
-                    <input id="inputSix" type="text" name="inputSix" placeholder="Grantee Award Year"><br><br>
-                </div>
-                <span>My agency is a former EMHE grantee.</span><br>
-                <span><input type="radio" name="radioYesFour"><b>Yes</b><input type="radio"
-                        name="radioNoFour"><b>No</b></span> <br><br>
-                <div id="extraInputFour" style="display: none;">
-                    <input id="inputSeven" type="text" name="inputSeven" placeholder="Grantee Number"><br><br>
-                    <input id="inputEight" type="text" name="inputEight" placeholder="Grantee Award Year"><br><br>
-                </div>
-                <span><input type="checkbox" name="checkboxFormSecond">&nbsp; No, my agency is not a current or former
-                    GSEM, REMS, or EMHE grantee.</span><br><br>
-                <div id="errorField2" class="error"></div>
-                <div class="button-container">
-                    <button id="backToFirstForm" type="button">Back</button>
-                    <button id="submitSecondFormButton" type="button">Continue</button>
-                </div>
-            </form>
+          <span class="required">*</span>
+          <input
+            id="stepThreeInputTwo"
+            type="text"
+            name="lastName"
+            placeholder="LAST NAME"
+            required
+          /><br /><br />
 
-        </div>
-        <!-- Form Second End -->
+          <span class="required">*</span>
+          <input
+            id="stepThreeInputThree"
+            type="text"
+            name="organization"
+            placeholder="ORGANIZATION"
+            required
+          /><br /><br />
 
+          <span class="required">*</span>
+          <input
+            id="stepThreeInputFour"
+            type="text"
+            name="title"
+            placeholder="TITLE"
+            required
+          /><br /><br />
 
-        <!-- Form Third Start -->
-        <div id="formThird" class="form">
-            <h2 class="headingForThirdForm">Submission and Authorization</h2>
-            <h3 class="formThirdSubHeading">Terms of Submission</h3>
-            <form id="thirdForm">
-                <span style="text-align: start;margin-left: -12%;margin-bottom: 10px;margin-right: 10%;">
-                    <span><span class="required">*</span><input type="checkbox" name="checkboxFormSecond">&nbsp; I agree
-                        to
-                        the Terms of Submission by providing this information, you agree that you are authorized to
-                        release
-                        this resource to the REMS TA Center for general inclusion on the Tool Box, if
-                        selected</span><br><br>
+          <span class="required">*</span>
+          <input
+            id="stepThreeInputFive"
+            type="text"
+            name="workPhone"
+            placeholder="WORK PHONE"
+            required
+          /><br /><br />
 
-                    <span> <span class="required">*</span><input type="checkbox" name="checkboxFormSecond">&nbsp; I have
-                        permission and proper copyright clearance to allow the REMS TA Center to post this document as a
-                        part of the Tool Box</span><br><br>
-                </span>
-                <hr class="line">
-
-                <span class="required">*</span>
-                <input id="stepThreeInputOne" type="text" name="firstName" placeholder="FIRST NAME" required><br><br>
-
-                <span class="required">*</span>
-                <input id="stepThreeInputTwo" type="text" name="lastName" placeholder="LAST NAME" required><br><br>
-
-                <span class="required">*</span>
-                <input id="stepThreeInputThree" type="text" name="organization" placeholder="ORGANIZATION" required><br><br>
-
-                <span class="required">*</span>
-                <input id="stepThreeInputFour" type="text" name="title" placeholder="TITLE" required><br><br>
-
-                <span class="required">*</span>
-                <input id="stepThreeInputFive" type="text" name="workPhone" placeholder="WORK PHONE" required><br><br>
-
-                <span class="required">*</span>
-                <input id="stepThreeInputSix" type="text" name="workEmail" placeholder="WORK EMAIL" required><br><br>
-                <div id="errorField3" class="error"></div>
-                <div class="button-container">
-                    <button id="backToSecondForm" type="button">Back</button>
-                    <button id="submitThirdFormButton" type="button">SUBMIT</button>
-                </div>
-            </form>
-        </div>
-        <!-- Form Third End  -->
-
-
+          <span class="required">*</span>
+          <input
+            id="stepThreeInputSix"
+            type="text"
+            name="workEmail"
+            placeholder="WORK EMAIL"
+            required
+          /><br /><br />
+          <div id="errorField3" class="error"></div>
+          <div class="button-container">
+            <button id="backToSecondForm" type="button">Back</button>
+            <button id="submitThirdFormButton" type="button">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+      <!-- Form Third End  -->
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="formsScript.js"></script>
-
-</body>
-
+  </body>
 </html>
